@@ -1,0 +1,65 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    height: auto-fill;
+    @media screen and (min-width: 768px) {
+        padding: 2em 5em;
+    }
+    &List {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em;
+        margin: 1em;
+        list-style: none;
+        &Item {
+            background-color: #e1e9e9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            &Name {
+                font-size: 1.5em;
+                margin-bottom: 1em;
+                font-weight: 700;
+            }
+            &Description {
+                font-size: 1em;
+                margin-bottom: 1em;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &Pagination{
+        &List{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: .5em;
+            &Item{
+                margin: 0 5px;
+                &Btn{
+                    text-decoration: none;
+                    color: #333;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #282c34;
+                        color: #f6f6f6;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1000px) {
+        
+    }
+
+}
